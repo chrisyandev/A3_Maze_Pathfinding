@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 32
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: m_SCP096_0
+  m_Shader: {fileID: 4800000, guid: f7882c8ffca99b8459cac81f26444e35, type: 3}
+  m_Parent: {fileID: 2100000, guid: 562efaec9906f8740beaa7d6ef18d6c5, type: 2}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - _ISDAY_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats:
+    - _Glossiness: 0.04229498
+    - _IsDay: 1
+    m_Colors:
+    - _NightColor: {r: 0.3301887, g: 0.3301887, b: 0.3301887, a: 1}
+  m_BuildTextureStacks: []
