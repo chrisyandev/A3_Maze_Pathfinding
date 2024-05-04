@@ -13,6 +13,7 @@ TagManager:
   - AI Wall
   - Player Wall
   - PongContainer
+  - Mark
   layers:
   - Default
   - TransparentFX

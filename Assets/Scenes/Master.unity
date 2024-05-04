@@ -1172,6 +1172,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 889012397}
+  - component: {fileID: 889012398}
   m_Layer: 0
   m_Name: Pathfinder
   m_TagString: Untagged
@@ -1194,6 +1195,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 789276344}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &889012398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889012396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebb1c05499d9f574d82b2db1ad88a5d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 7654142323011398465}
+  closedMat: {fileID: 2100000, guid: b407d2ece70e4004e8ffc7b33ecdc513, type: 2}
+  openMat: {fileID: 2100000, guid: 92feea6094d40c04a86421ece51ad6c6, type: 2}
+  startMarkObj: {fileID: 6485811974615137246, guid: d5954e4b092f36341ac37d4423e1c086, type: 3}
+  goalMarkObj: {fileID: 6485811974615137246, guid: d5954e4b092f36341ac37d4423e1c086, type: 3}
+  midMarkObj: {fileID: 6485811974615137246, guid: d5954e4b092f36341ac37d4423e1c086, type: 3}
 --- !u!1 &1159839896
 GameObject:
   m_ObjectHideFlags: 0
@@ -2193,6 +2212,10 @@ PrefabInstance:
       value: SCP-096
       objectReference: {fileID: 0}
     - target: {fileID: 4737581686530167064, guid: ae27037629c89b24c89291de36413737, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4737581686530167064, guid: ae27037629c89b24c89291de36413737, type: 3}
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
@@ -2522,6 +2545,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 431667190768601825, guid: 2479043a2d1a1024fbab5323cf1f6b9d, type: 3}
   m_PrefabInstance: {fileID: 7654142323011398461}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7654142323011398465 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2078976932714219284, guid: 2479043a2d1a1024fbab5323cf1f6b9d, type: 3}
+  m_PrefabInstance: {fileID: 7654142323011398461}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7654142323011398462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03397627e8ed00a469f3e7881beb2a5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

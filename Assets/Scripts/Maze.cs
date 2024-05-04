@@ -261,4 +261,8 @@ public class Maze : MonoBehaviour
         GameObject endZoneInstance = Instantiate(EndZonePrefab, lastCell.transform);
     }
 
+    public MazeCell[,] GetCells()
+    {
+        return cells;
+    }
 }

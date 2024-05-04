@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     public GameObject player;
     public GameObject ai;
 
-    private Maze mazeInstance;
+    public Maze mazeInstance;
     private NavMeshAgent aiNavMeshAgent;
 
     private MazeCell playerStartingCell;
@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
     private Quaternion CameraStartingRotation;
 
     public bool isDay = true;
+    public bool finishedGeneratingMaze = false;
 
     [SerializeField]
     private AudioSource bgMusic;
@@ -208,7 +209,13 @@ public class GameManager : MonoBehaviour
         SetupStartingPlayerPosition();
 
         // without delay, only part of navmesh will be built
-        Invoke("SetupAI", 0.5f);
+        Invoke("FinishedGeneratingMaze", 0.5f);
+    }
+
+    private void FinishedGeneratingMaze()
+    {
+        finishedGeneratingMaze = true;
+        //SetupAI();
     }
 
     private void SetupStartingPlayerPosition()
